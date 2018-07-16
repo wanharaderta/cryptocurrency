@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    tools:context=".view.detail.DetailActivity">
+
+    <TextView
+        android:id="@+id/dateTime"
+        android:textSize="15sp"
+        android:text="Last"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_below="@+id/dateTime"
+        android:id="@+id/vRank"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/vPrice"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="price"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/vRank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="16dp"
+        android:id="@+id/vCirculating_supply"
+        android:textSize="18sp"
+        android:layout_below="@+id/vPrice"
+        android:text="Circulating Supply : "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="16dp"
+        android:id="@+id/circulating_supply_text"
+        android:textSize="18sp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/vPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/vTotal_supply"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/vCirculating_supply"
+        android:text="Total Supply : "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/total_supply_text"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/vCirculating_supply"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/vMax_supply"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/vTotal_supply"
+        android:text="Max Supply : "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/max_supply_text"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/vTotal_supply"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/vVolume_24h"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/vMax_supply"
+        android:text="Volume 24h : "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/volume_24h_text"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/vMax_supply"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/market_cap"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/vVolume_24h"
+        android:text="Market Cap : "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/market_cap_text"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/vVolume_24h"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/vPercent_change_1h"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/market_cap"
+        android:text="Percent Change 1h : "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/percent_change_1h_text"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/market_cap"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/vPercent_change_24h"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/vPercent_change_1h"
+        android:text="Percent Change 24h : "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/percent_change_24h_text"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/vPercent_change_1h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/Vpercent_change_7d"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/vPercent_change_24h"
+        android:text="Percent Change 7d : "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/percent_change_7d_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/vPercent_change_24h"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp" />
+
+</RelativeLayout>

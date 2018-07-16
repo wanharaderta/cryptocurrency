@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="16dp"
+    android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/username"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:hint="Email" />
+    <EditText
+        android:id="@+id/password"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:hint="Password"/>
+
+    <Button
+        android:id="@+id/btn_done"
+        android:layout_below="@+id/password"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        style="@style/Base.Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_margin="12dp"
+        android:layout_height="wrap_content"
+        android:text="Done" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_done"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        style="@style/Base.Widget.AppCompat.Button"
+        android:layout_margin="12dp"
+        android:text="Cancel" />
+</LinearLayout>
